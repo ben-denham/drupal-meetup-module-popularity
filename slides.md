@@ -8,19 +8,6 @@
 
 
 
-## Overview
-
-* Background and motivation <!-- .element: class="fragment" -->
-* Building a module dataset <!-- .element: class="fragment" -->
-* "Cleaning" the data <!-- .element: class="fragment" -->
-* Applying machine learning algorithms <!-- .element: class="fragment" -->
-* Evaluating the results <!-- .element: class="fragment" -->
-* Limitations <!-- .element: class="fragment" -->
-* Implications for the community <!-- .element: class="fragment" -->
-* Ideas for future research <!-- .element: class="fragment" -->
-
-
-
 ## Background and Motivation
 
 * Core problem: Is this module of acceptable quality? <!-- .element: class="fragment" -->
@@ -39,6 +26,8 @@
     * Source-code metrics <!-- .element: class="fragment" -->
     * Project metrics considered in practice by surveyed Drupal
       developers <!-- .element: class="fragment" -->
+* Popularity would be quantified as the total number of module
+  installations.
 
 
 
@@ -98,7 +87,6 @@ Argued to be the most important step for successful data mining <!-- .element: c
     * Attribute selection <!-- .element: class="fragment" -->
     * Data balancing <!-- .element: class="fragment" -->
     * Algorithm parameters <!-- .element: class="fragment" -->
-    * Predictive thresholds <!-- .element: class="fragment" -->
 * The best results were achieved when "moderately popular" modules
   were removed from the dataset <!-- .element: class="fragment" -->
 
@@ -127,10 +115,6 @@ Argued to be the most important step for successful data mining <!-- .element: c
 * Metrics were aligned with the ISO25010 software-quality model <!-- .element: class="fragment" -->
     * "Reliability" strongly related to popularity
 * Popular modules did not have better source-code metrics <!-- .element: class="fragment" -->
-* A comparison of Facebook-integration modules ruled out "module
-  purpose" as a confounding factor <!-- .element: class="fragment" -->
-    * i.e. Whether the metrics relate to types of module that are
-      popular, rather than popularity itself <!-- .element: style="font-size: 80%;" -->
 
 
 
@@ -138,28 +122,18 @@ Argued to be the most important step for successful data mining <!-- .element: c
 
 * No directionality in the identified relationships <!-- .element: class="fragment" -->
 * High installation count != well-engineered <!-- .element: class="fragment" -->
-* Some project attributes were not considered: <!-- .element: class="fragment" -->
-    * Internal factors (functional issues, documentation quality)
-    * External factors (module exposure/promotion)
+* Various project attributes were impractical to consider <!-- .element: class="fragment" -->
 
 
 
 ## Implications for the Community
 
 * Will software-metric reports be useful for Drupal? <!-- .element: class="fragment" -->
-    * Do they not indicate quality for Drupal code? <!-- .element: class="fragment" -->
+    * Do they indicate quality for Drupal code? <!-- .element: class="fragment" -->
     * Are many popular modules poor-quality? Does it matter? <!-- .element: class="fragment" -->
     * At the very least, project community strength seems to indicate
       project success more than source-code quality metrics <!-- .element: class="fragment" -->
-
-
-## Implications for the Community
-
-* Module evaluation tool for project pages?
-    * Aggregation of project metrics already presented on module pages <!-- .element: class="fragment" -->
-    * Could indicate the strength of a module according to the
-      identified metrics and thresholds <!-- .element: class="fragment" -->
-    * Particularly useful for new Drupal developers <!-- .element: class="fragment" -->
+* A module evaluation tool for project pages? <!-- .element: class="fragment" -->
 
 
 ## Module Evaluation Tool
